@@ -42,11 +42,11 @@ variables:
 
 permissions:
   - level: CAN_MANAGE
-    group_name: telco-customer-support
+    group_name: users
   - level: CAN_VIEW
     group_name: users
   - level: CAN_MANAGE
-    service_principal_name: fc51b87a-e4da-47a9-820e-deb6c056ec8b
+    user_name: aiden.krain@fujitsu.com
 
 include:
   - ./resources/**/*.yml
@@ -56,7 +56,7 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://e2-demo-west.cloud.databricks.com
+      host: https://adb-594939078921911.11.azuredatabricks.net/
     variables:
       disable_tools: ""
       
